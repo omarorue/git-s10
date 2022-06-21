@@ -96,23 +96,35 @@ nav a{
 
 /* Pie de Pagina */
 
+/* Mapa de Contacto */
+
+/* Repositorios Remotos */
+
+/* Tabla de Colaboradores */
+
+/* Redes sociales */
+
+/* Formulario de Contacto */
+
+/* Derechos de Autor */
+
 /* Medium Devices - Tablets */
 @media screen and (min-width: 768px){
-nav .btn{
-    display: none;
-}
-.menu{
-    position: static;
-    display: flex;
-    width: auto;
-    background-image: none;
-    gap: .5rem;
-}
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        width: auto;
+        background-image: none;
+        gap: .5rem;
+    }
 }
 /* Extra Large Devices - HD Desktop */
 @media screen and (min-width: 1200px){
-nav{
-    justify-content: space-around;
-}
+    nav{
+        justify-content: space-around;
+    }
 }
 
