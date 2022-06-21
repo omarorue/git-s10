@@ -6,13 +6,25 @@
     font-family: 'Raleway', 'Calibri', 'Segoe ui', sans-serif;
  }
     /* Margenes */
- 
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    header p,
+    .menu{
+        margin: 0;
+    }
     /* Bordes */
- 
+    iframe{
+        border: none;
+    }
     /* Rellenos */
  
     /* Estilos */
-
+    #footer a{
+        text-decoration: none;
+    }
 /* Navegacion */
 
 /* Cabecera */
