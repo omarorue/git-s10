@@ -20,13 +20,74 @@
         border: none;
     }
     /* Rellenos */
- 
+    .menu{
+        padding: 0;
+    }
     /* Estilos */
+    nav a,
     #footer a{
         text-decoration: none;
     }
+    .menu{
+        list-style: none;
+    }
 /* Navegacion */
-
+nav{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem;
+    background: linear-gradient(to right, #c26, #448)
+}
+nav a{
+    color: #eee;
+    font-weight: bold;
+}
+.menu a.active,
+.menu a:hover{
+    color: #fff;
+    text-shadow: 0 0 .5rem #eee;
+}
+.menu{
+    position: fixed;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: space-evenly;
+    text-align: center;
+    background:  linear-gradient(#c26, #448);
+    opacity: .85;
+    transition: all .5s ease-out;
+}
+.menu.active{
+    left: 0;
+}
+.btn{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #eee;
+    color: #eee;
+    background-color: transparent;
+}
+.btn:hover{
+    color:#448;
+    background-color: #eee;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu a.active,
+.menu a:hover{
+    font-weight: bold;
+    text-shadow: 0 0 .5rem #eee;
+}
 /* Cabecera */
 
 /* Tabla de Contenidos */
@@ -34,4 +95,24 @@
 /* Contenido */
 
 /* Pie de Pagina */
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px){
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        width: auto;
+        background-image: none;
+        gap: .5rem;
+    }
+    }
+    /* Extra Large Devices - HD Desktop */
+    @media screen and (min-width: 1200px){
+    nav{
+        justify-content: space-around;
+    }
+    }
 
